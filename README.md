@@ -2,7 +2,7 @@
 
 Este proyecto permite tokenizar datos de tarjeta y recuperar la información de la tarjeta mediante un token. 
 
-## Requisitos previos
+## Requisitos
 
 - [Node.js](https://nodejs.org/) y [npm](https://www.npmjs.com/).
 - Instancia de [PostgreSQL](https://www.postgresql.org/download/) en ejecución y configurada.
