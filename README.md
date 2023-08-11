@@ -20,16 +20,16 @@ Para crear las tablas y estructuras necesarias en PostgreSQL:
 
 Conéctate a tu instancia PostgreSQL.
 Ejecuta el script SQL que se encuentra en el archivo db/script.sql.
-```psql -U <usuario> -d <bd> -a -f script.sql```
+````psql -U <usuario> -d <bd> -a -f script.sql````
 
 Reemplaza <usuario> y <bd> con tus datos de PostgreSQL
 
 ## Ejecución del Proyecto
 
 Para correr el proyecto localmente:
-```serverless offline```
+````serverless offline````
 
 ## Pruebas
 Para ejecutar las pruebas unitarias:
-```npm test```
+````npm test````
 
