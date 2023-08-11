@@ -1,0 +1,23 @@
+service: payment-gateway
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+functions:
+  createToken:
+    handler: tokenization.createToken
+    events:
+      - http:
+          path: /token
+          method: post
+          cors: true
+  fetchCard:
+    handler: handlers/fetchCard.fetchCard
+    events:
+      - http:
+          path: /card/{token}
+          method: get
+          cors: true
+

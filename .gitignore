@@ -1,0 +1,16 @@
+# Ignorar carpeta node_modules
+node_modules/
+
+# Ignorar archivos de configuración de desarrollo
+*.env
+*.env.local
+*.log
+
+# Ignorar archivos generados por IDEs
+.idea/
+.vscode/
+
+# Ignorar archivos de respaldo de código
+*.bak
+*.backup
+*.swp
