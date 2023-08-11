@@ -36,3 +36,29 @@ Para ejecutar las pruebas unitarias:
 
 ````npm test````
 
+## Documentación
+
+### Crear un Token
+
+Método: POST
+URL: http://localhost:3000/createToken
+Headers: Content-Type: application/json
+Body:
+
+```json
+{
+"cardNumber": "4111111111111111",
+"cvv": "123",
+"expirationMonth": 12,
+"expirationYear": 2025,
+"email": "usuario@gmail.com"
+}
+```
+
+
+### btener Información de la Tarjeta
+
+Método: GET
+URL: http://localhost:3000/fetchCard/{token}
+Headers: Content-Type: application/json
+
