@@ -35,7 +35,7 @@ class TokenService {
     const result = await query(
       `SELECT card_number, expiration_month, expiration_year, email
        FROM tokenized_cards
-       WHERE token = $1 AND CURRENT_TIMESTAMP < expiration`,
+       WHERE token = $1 AND CURRENT_TIMESTAMP < (expiration_year || '-' || LPAD(expiration_month::text, 2, '0') || '-01')::DATE + INTERVAL '1 month'`,
       [token]
     );
     if (result.rows.length === 0) {
