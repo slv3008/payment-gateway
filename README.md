@@ -56,7 +56,7 @@ Body:
 ```
 
 
-### btener Información de la Tarjeta
+### Obtener Información de la Tarjeta
 
 Método: GET
 URL: http://localhost:3000/fetchCard/{token}
